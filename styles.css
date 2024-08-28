@@ -1,0 +1,206 @@
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5b5b5b; /* Легкий винтажный фоновый цвет */
+    color: #333; /* Темный цвет текста */
+}
+html{
+    scroll-behavior: smooth;
+}
+header {
+    background-color: #000000a6; /* Теплый коричневый для винтажного эффекта */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    height: 50px;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(4px);
+    border-bottom: 4px solid #353535; /* Винтажный акцент */
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 3vw, 2.6rem) ;
+    margin: 0;
+}
+nav{
+    width: 80%;
+}
+nav ul {
+    list-style-type: none;  
+    padding: 0;
+    padding-left: 25%;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    height: 100%;
+    color: #fff; /* Светлый кремовый цвет */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid #00000000;
+    transition-duration: 300ms;
+    padding: 10px;
+}
+nav ul li a:hover{
+    color: #c9c9c9;
+    border: 1px solid #fff;
+    transition-duration: 300ms;
+    
+}
+.header_btn{
+    display: none;
+    position: fixed;
+    right: 60px;
+    color: #000000;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    transition-duration: 300ms;
+}
+.header_btn:hover{
+    background-color: #353535;
+    transition-duration: 300ms;
+}
+
+.header_btn img{
+    width: 100%;
+    height: 100%;
+}
+#about{
+    margin-top: 120px;
+}
+section {
+    margin-top: 150px;
+    padding: 40px;
+    margin: 20px auto;
+    background-color: #000000a6;
+    border: #000000 solid 3px;
+    box-shadow: 0 0 15px rgba(168, 168, 168, 0.1);
+    max-width: 1200px;
+    color: #fafafa;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #ffffff;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.portfolio-item {
+    flex: 1 1 calc(33.333% - 15px);
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 5px solid #ffffff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+button {
+    padding: 15px;
+    background-color: #000;
+    color: white;
+    border: none;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+    font-size: 1rem;
+    transition-duration: 300ms;
+}
+
+button:hover {
+    background-color: #515151;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Адаптивные стили */
+@media (max-width: 1095px) {
+    nav{
+        display: none;
+        position: fixed;
+        right: 0;
+        top: 92px;
+        width: 100%;
+        background-color: #000000a6;
+            
+    }
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: flex;
+        text-align: center;
+    }
+    nav ul li a{
+        width: 90%;
+    }
+    .header_btn{
+        display: block;
+    }
+    section {
+        margin: 10px;
+        padding: 25px;
+    }
+
+    .portfolio-item {
+        flex: 1 1 calc(50% - 15px);
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-item {
+        flex: 1 1 100%;
+    }
+}

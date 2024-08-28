@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StitchMaster - Ваш Партнер в Швейном Производстве</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>StitchMaster</h1>
+        <nav id="nav">
+            <ul>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="#careers">Вакансии</a></li>
+            </ul>
+        </nav>
+        <button class="header_btn" onclick="activate_menu()"><img src="menu_icon.png" alt="menu_icon"></button>
+    </header>
+
+    <section id="about">
+        <h2>О нас</h2>
+        <p>StitchMaster - ведущий производитель качественной и стильной одежды для различных сегментов рынка. Мы работаем с клиентами на протяжении более 20 лет, предлагая широкий спектр услуг от разработки дизайна до массового производства. Наша миссия - создавать одежду, которая не только соответствует модным трендам, но и обеспечивает комфорт и долговечность.</p>
+        <p>Мы гордимся нашим коллективом профессионалов, которые ежедневно трудятся над созданием продукции, удовлетворяющей самым высоким стандартам. Наше оборудование и технологии позволяют нам воплощать в жизнь самые смелые идеи наших клиентов.</p>
+    </section>
+
+    <section id="services">
+        <h2>Услуги</h2>
+        <ul>
+            <li>**Индивидуальный пошив**: Разработка и производство одежды по индивидуальным заказам.</li>
+            <li>**Массовое производство**: Производство больших партий одежды для розничной торговли и оптовиков.</li>
+            <li>**Дизайн и разработка**: Создание эксклюзивных коллекций с учетом последних модных тенденций.</li>
+            <li>**Контроль качества**: Полный цикл проверки и контроля качества на всех этапах производства.</li>
+            <li>**Упаковка и логистика**: Организация упаковки и доставки продукции до конечного потребителя.</li>
+        </ul>
+    </section>
+
+    <section id="portfolio">
+        <h2>Портфолио</h2>
+        <div class="portfolio-gallery">
+            <div class="portfolio-item">
+                <img src="test.jpeg" alt="Проект 1">
+            </div>
+            <div class="portfolio-item">
+                <img src="test.jpeg" alt="Проект 2">
+            </div>
+            <div class="portfolio-item">
+                <img src="test.jpeg" alt="Проект 3">
+            </div>
+            <div class="portfolio-item">
+                <img src="test.jpeg" alt="Проект 4">
+            </div>
+            <div class="portfolio-item">
+                <img src="test.jpeg" alt="Проект 5">
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <h2>Контакты</h2>
+        <p>Если у вас есть вопросы или предложения, свяжитесь с нами по телефону или электронной почте. Мы будем рады обсудить детали вашего заказа и предложить оптимальное решение.</p>
+        <p>**Адрес**: Москва, ул. Промышленная, 10</p>
+        <p>**Телефон**: +7 (999) 123-45-67</p>
+        <p>**Email**: info@stitchmaster.ru</p>
+        <p>**Рабочие часы**: Понедельник - Пятница, 9:00 - 18:00</p>
+    </section>
+
+    <section id="careers">
+        <h2>Вакансии</h2>
+        <p>Присоединяйтесь к команде StitchMaster! Мы ищем увлеченных и талантливых профессионалов, которые готовы внести свой вклад в наш успех. Ознакомьтесь с нашими актуальными вакансиями:</p>
+        <ul>
+            <li>Швея</li>
+            <li>Закройщик</li>
+            <li>Технолог</li>
+            <li>Менеджер по продажам</li>
+            <li>Дизайнер одежды</li>
+        </ul>
+        <p>Отправьте свое резюме на **info@stitchmaster.ru** с указанием интересующей вас вакансии.</p>
+    </section>
+
+    <section id="contact-form">
+        <h2>Связаться с нами</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 StitchMaster. Все права защищены.</p>
+    </footer>
+</body>
+</html>
