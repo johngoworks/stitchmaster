@@ -1,106 +1,168 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StitchMaster - Ваш Партнер в Швейном Производстве</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
-    <script src="script.js"></script>
+    <title>Эксклюзивные Корпоративные Подарки и Сувениры</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Пользовательские стили при необходимости */
+    </style>
 </head>
-<body>
-    <header>
-        <h1>StitchMaster</h1>
-        <nav id="nav">
-            <ul>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#portfolio">Портфолио</a></li>
-                <li><a href="#contacts">Контакты</a></li>
-                <li><a href="#careers">Вакансии</a></li>
-            </ul>
-        </nav>
-        <button class="header_btn" onclick="activate_menu()"><img src="menu_icon.png" alt="menu_icon"></button>
-    </header>
 
-    <section id="about">
-        <h2>О нас</h2>
-        <p>StitchMaster - ведущий производитель качественной и стильной одежды для различных сегментов рынка. Мы работаем с клиентами на протяжении более 20 лет, предлагая широкий спектр услуг от разработки дизайна до массового производства. Наша миссия - создавать одежду, которая не только соответствует модным трендам, но и обеспечивает комфорт и долговечность.</p>
-        <p>Мы гордимся нашим коллективом профессионалов, которые ежедневно трудятся над созданием продукции, удовлетворяющей самым высоким стандартам. Наше оборудование и технологии позволяют нам воплощать в жизнь самые смелые идеи наших клиентов.</p>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Навигация -->
+    <nav class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-gray-900">Корпоративные Подарки</a>
+            <div class="space-x-4">
+                <a href="#home" class="text-gray-600 hover:text-gray-900">Главная</a>
+                <a href="#about" class="text-gray-600 hover:text-gray-900">О нас</a>
+                <a href="#services" class="text-gray-600 hover:text-gray-900">Услуги</a>
+                <a href="#collections" class="text-gray-600 hover:text-gray-900">Коллекции</a>
+                <a href="#portfolio" class="text-gray-600 hover:text-gray-900">Портфолио</a>
+                <a href="#contact" class="text-gray-600 hover:text-gray-900">Контакты</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Главный блок -->
+    <section id="home" class="bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('your-image.jpg');">
+        <div class="text-center text-white">
+            <h1 class="text-4xl font-bold">Эксклюзивные Корпоративные Подарки и Сувениры</h1>
+            <p class="mt-4 text-lg">Мы создаем воспоминания с каждым подарком, индивидуально для вашего бренда.</p>
+            <a href="#collections" class="mt-6 inline-block bg-blue-600 text-white py-2 px-6 rounded">Ознакомиться с коллекциями</a>
+        </div>
     </section>
 
-    <section id="services">
-        <h2>Услуги</h2>
-        <ul>
-            <li>**Индивидуальный пошив**: Разработка и производство одежды по индивидуальным заказам.</li>
-            <li>**Массовое производство**: Производство больших партий одежды для розничной торговли и оптовиков.</li>
-            <li>**Дизайн и разработка**: Создание эксклюзивных коллекций с учетом последних модных тенденций.</li>
-            <li>**Контроль качества**: Полный цикл проверки и контроля качества на всех этапах производства.</li>
-            <li>**Упаковка и логистика**: Организация упаковки и доставки продукции до конечного потребителя.</li>
-        </ul>
-    </section>
-
-    <section id="portfolio">
-        <h2>Портфолио</h2>
-        <div class="portfolio-gallery">
-            <div class="portfolio-item">
-                <img src="test.jpeg" alt="Проект 1">
-            </div>
-            <div class="portfolio-item">
-                <img src="test.jpeg" alt="Проект 2">
-            </div>
-            <div class="portfolio-item">
-                <img src="test.jpeg" alt="Проект 3">
-            </div>
-            <div class="portfolio-item">
-                <img src="test.jpeg" alt="Проект 4">
-            </div>
-            <div class="portfolio-item">
-                <img src="test.jpeg" alt="Проект 5">
+    <!-- О нас -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800">Кто мы?</h2>
+            <p class="mt-4 text-center text-gray-600">Мы стремимся предоставлять высококачественные, индивидуально настраиваемые корпоративные подарки, которые оставляют неизгладимое впечатление.</p>
+            <div class="mt-8 flex flex-wrap justify-center">
+                <div class="w-full md:w-1/3 px-4 py-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Наша Миссия</h3>
+                    <p class="mt-2 text-gray-600">Создавать эксклюзивные корпоративные подарки, которые идеально передают индивидуальность вашего бренда.</p>
+                </div>
+                <div class="w-full md:w-1/3 px-4 py-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Наше Видение</h3>
+                    <p class="mt-2 text-gray-600">Быть ведущим поставщиком премиальных корпоративных подарков, которые радуют и вдохновляют.</p>
+                </div>
+                <div class="w-full md:w-1/3 px-4 py-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Наша Команда</h3>
+                    <p class="mt-2 text-gray-600">Команда креативных профессионалов, преданных делу создания уникальных решений для вашего бизнеса.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contacts">
-        <h2>Контакты</h2>
-        <p>Если у вас есть вопросы или предложения, свяжитесь с нами по телефону или электронной почте. Мы будем рады обсудить детали вашего заказа и предложить оптимальное решение.</p>
-        <p>**Адрес**: Москва, ул. Промышленная, 10</p>
-        <p>**Телефон**: +7 (999) 123-45-67</p>
-        <p>**Email**: info@stitchmaster.ru</p>
-        <p>**Рабочие часы**: Понедельник - Пятница, 9:00 - 18:00</p>
+    <!-- Услуги -->
+    <section id="services" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800">Наши Услуги</h2>
+            <div class="mt-8 flex flex-wrap justify-center">
+                <div class="w-full md:w-1/3 px-4 py-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Индивидуальные Корпоративные Подарки</h3>
+                    <p class="mt-2 text-gray-600">Мы предлагаем широкий ассортимент подарков, которые можно настроить под любое корпоративное событие.</p>
+                </div>
+                <div class="w-full md:w-1/3 px-4 py-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Гравировка Логотипа</h3>
+                    <p class="mt-2 text-gray-600">Добавьте логотип вашей компании на любой из наших продуктов с помощью профессиональной гравировки.</p>
+                </div>
+                <div class="w-full md:w-1/3 px-4 py-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Решения для Корпоративных Мероприятий</h3>
+                    <p class="mt-2 text-gray-600">Мы предоставляем полный спектр услуг по созданию подарков для ваших корпоративных мероприятий.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="careers">
-        <h2>Вакансии</h2>
-        <p>Присоединяйтесь к команде StitchMaster! Мы ищем увлеченных и талантливых профессионалов, которые готовы внести свой вклад в наш успех. Ознакомьтесь с нашими актуальными вакансиями:</p>
-        <ul>
-            <li>Швея</li>
-            <li>Закройщик</li>
-            <li>Технолог</li>
-            <li>Менеджер по продажам</li>
-            <li>Дизайнер одежды</li>
-        </ul>
-        <p>Отправьте свое резюме на **info@stitchmaster.ru** с указанием интересующей вас вакансии.</p>
+    <!-- Коллекции -->
+    <section id="collections" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800">Коллекции Эксклюзива</h2>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="premium-collection.jpg" alt="Премиум Коллекция" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Премиум Коллекция</h3>
+                        <p class="mt-2 text-gray-600">Ознакомьтесь с нашей роскошной коллекцией, созданной из лучших материалов.</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="eco-friendly.jpg" alt="Эко Коллекция" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Эко Коллекция</h3>
+                        <p class="mt-2 text-gray-600">Устойчивые подарки для тех, кто заботится об окружающей среде.</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="tech-gadgets.jpg" alt="Технологичная Коллекция" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Технологичная Коллекция</h3>
+                        <p class="mt-2 text-gray-600">Инновационные гаджеты с вашим логотипом для современных компаний.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact-form">
-        <h2>Связаться с нами</h2>
-        <form action="submit_form.php" method="post">
-            <label for="name">Имя:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="phone">Телефон:</label>
-            <input type="tel" id="phone" name="phone" required>
-
-            <label for="message">Сообщение:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Отправить</button>
-        </form>
+    <!-- Портфолио -->
+    <section id="portfolio" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800">Наши Работы</h2>
+            <p class="mt-4 text-center text-gray-600">Познакомьтесь с нашими недавними проектами и посмотрите, как мы помогли компаниям создать незабываемые впечатления.</p>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Добавьте элементы портфолио здесь -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="project1.jpg" alt="Проект 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Название Проекта</h3>
+                        <p class="mt-2 text-gray-600">Краткое описание проекта и результаты.</p>
+                    </div>
+                </div>
+                <!-- Повторите для других проектов -->
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 StitchMaster. Все права защищены.</p>
+    <!-- Контакты -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800">Свяжитесь с Нами</h2>
+            <p class="mt-4 text-center text-gray-600">У вас есть вопросы или хотите сделать заказ? Мы всегда готовы помочь!</p>
+            <div class="mt-8 max-w-lg mx-auto">
+                <form action="#" method="POST">
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Имя</label>
+                        <input type="text" id="name" name="name" class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Сообщение</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none" required></textarea>
+                    </div>
+                    <div class="mb-4">
+                        <button type="submit" class="w-full bg-blue-600 text-white py-2 px-6 rounded-lg">Отправить Сообщение</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Корпоративные Подарки. Все права защищены.</p>
+        </div>
     </footer>
+
 </body>
+
 </html>
